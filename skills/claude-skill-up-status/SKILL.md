@@ -6,7 +6,7 @@ license: MIT
 metadata:
   author: clawdioversace
   version: "1.0"
-  repo: https://github.com/clawdioversace-beep/claude-skill-up
+  repo: https://github.com/jpippo364/claude-skill-up
 ---
 
 # claude-skill-up-status

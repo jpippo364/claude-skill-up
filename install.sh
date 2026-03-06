@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # claude-skill-up installer
-# One-line install: curl -sSL https://raw.githubusercontent.com/clawdioversace/claude-skill-up/main/install.sh | bash
+# One-line install: curl -sSL https://raw.githubusercontent.com/jpippo364/claude-skill-up/main/install.sh | bash
 
 set -euo pipefail
 
@@ -49,7 +49,7 @@ if [[ -z "$SOURCE_DIR" || ! -f "$SOURCE_DIR/lib/engine.sh" ]]; then
   TEMP_DIR=$(mktemp -d)
   trap "rm -rf $TEMP_DIR" EXIT
   if command -v git &>/dev/null; then
-    git clone --depth 1 https://github.com/clawdioversace/claude-skill-up.git "$TEMP_DIR/claude-skill-up" 2>/dev/null
+    git clone --depth 1 https://github.com/jpippo364/claude-skill-up.git "$TEMP_DIR/claude-skill-up" 2>/dev/null
     SOURCE_DIR="$TEMP_DIR/claude-skill-up"
   else
     echo "Error: git is required for remote install"
